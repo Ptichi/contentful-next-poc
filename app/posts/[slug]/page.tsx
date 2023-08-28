@@ -22,7 +22,7 @@ export default async function PostPage({
 }: {
   params: { slug: string }
 }) {
-  const { isEnabled } = draftMode()
+  const { isEnabled } = draftMode();
   const { post, morePosts } = await getPostAndMorePosts(params.slug, isEnabled)
 
   return (
