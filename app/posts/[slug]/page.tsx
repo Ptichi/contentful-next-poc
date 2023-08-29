@@ -63,6 +63,7 @@ export default async function PostPage({
         </div>
       </article>
       <hr className="border-accent-2 mt-28 mb-24" />
+      <div data-ni-instance-id="6453b9b1aa9266d988d6e8a1"></div>
       <MoreStories morePosts={morePosts} />
     </div>
   )
