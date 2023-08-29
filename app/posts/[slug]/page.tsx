@@ -9,13 +9,13 @@ import CoverImage from '../../cover-image'
 import { Markdown } from '@/lib/markdown'
 import { getAllPosts, getPostAndMorePosts } from '@/lib/api'
 
-export async function generateStaticParams() {
-  const allPosts = await getAllPosts(false)
-
-  return allPosts.map((post) => ({
-    slug: post.slug,
-  }))
-}
+// export async function generateStaticParams() {
+//   const allPosts = await getAllPosts(false)
+//
+//   return allPosts.map((post) => ({
+//     slug: post.slug,
+//   }))
+// }
 
 export default async function PostPage({
   params,
