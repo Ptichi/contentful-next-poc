@@ -11,7 +11,7 @@ import CoverImage from '../../../cover-image';
 import { Markdown } from '@/lib/markdown';
 import footerProps from '../../../data/footer-props.json';
 
-function Body({ morePosts, post }) {
+function Body({ morePosts, post }: { morePosts: any[]; post: any }) {
   return (
     <Top10ThemeProvider>
       <div className="container mx-auto px-5">
@@ -29,7 +29,7 @@ function Body({ morePosts, post }) {
             {post.author && <Avatar name={post.author.name} picture={post.author.picture} />}
           </div>
           <div className="mb-8 md:mb-16 sm:mx-0">
-            <CoverImage title={post.title} url={post.coverPhoto.url} />
+            {post?.coverPhoto?.url && <CoverImage title={post.title} url={post.coverPhoto.url} />}
           </div>
           <div className="max-w-2xl mx-auto">
             <div className="block md:hidden mb-6">
