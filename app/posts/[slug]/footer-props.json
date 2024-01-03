@@ -1,0 +1,40 @@
+{
+  "siteLogo": {
+    "image": {
+      "url": "https://images.naturalint.com/q_auto/v1/production/foundation-entities/uploads/photo/logo.20230326195623.20230518090244.20230706064308.svg",
+      "title": "Top10",
+      "alt": "Top10"
+    },
+    "link": ""
+  },
+  "externalServicesLogos": [],
+  "showDontSellMyInformation": false,
+  "copyrightContent": "<p>Copyright © 2009 - 2023 Natural Intelligence Ltd. All Rights Reserved.</p><p><strong>Mailing address:</strong></p><p>4023 Kennett Pike #50055</p><p>Wilmington, DE 19807</p>",
+  "disclosureContent": "<p>Top10.com is designed to help users make confident decisions online, this website contains information about a wide range of products and services. Certain details, including but not limited to prices and special offers, are provided to us directly from our partners and are dynamic and subject to change at any time without prior notice. Though based on meticulous research, the information we share does not constitute legal or professional advice or forecast, and should not be treated as such.</p><p>Reproduction in whole or in part is strictly prohibited.</p><p>As an Amazon Associate we earn from qualifying purchases.</p>",
+  "navigationMenuLinks": [
+    {
+      "link": "/about-us",
+      "text": "About Us"
+    },
+    {
+      "link": "/cookie",
+      "text": "Cookie Policy"
+    },
+    {
+      "link": "/terms-of-use",
+      "text": "Terms of Use"
+    },
+    {
+      "link": "/privacy-policy",
+      "text": "Privacy Policy"
+    },
+    {
+      "link": "/sitemap",
+      "text": "Sitemap"
+    },
+    {
+      "link": "/partner-with-us",
+      "text": "Partner With Us"
+    }
+  ]
+}
