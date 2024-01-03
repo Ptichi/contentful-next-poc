@@ -20,9 +20,7 @@ function PostPreview({
 }) {
   return (
     <div>
-      <div className="mb-5">
-        {<CoverImage title={title} slug={slug} url={coverPhoto?.url} />}
-      </div>
+      <div className="mb-5">{coverPhoto?.url && <CoverImage title={title} slug={slug} url={coverPhoto.url} />}</div>
       <h3 className="text-3xl mb-3 leading-snug">
         <Link href={`/posts/${slug}`} className="hover:underline">
           {title}

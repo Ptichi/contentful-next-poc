@@ -1,8 +1,8 @@
 import { draftMode } from 'next/headers';
 
-import Body from './body';
+import { ArticleHead } from './_children/head';
+import Body from './_children/body';
 
-import { Markdown } from '@/lib/markdown';
 import { getAllPosts, getPostAndMorePosts } from '@/lib/api';
 
 export async function generateStaticParams() {
@@ -17,5 +17,10 @@ export default async function PostPage({ params }: { params: { slug: string } })
   const { isEnabled } = draftMode();
   const { post, morePosts } = await getPostAndMorePosts(params.slug, isEnabled);
 
-  return <Body post={post} morePosts={morePosts} />;
+  return (
+    <>
+      <ArticleHead />
+      <Body post={post} morePosts={morePosts} />
+    </>
+  );
 }

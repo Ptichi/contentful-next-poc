@@ -1,5 +1,7 @@
 'use client';
 
+import Head from 'next/head';
+
 import { css, Global } from '@emotion/react';
 import { FontHurme } from '@xsite-ui/common.font-hurme';
 import { cssReset } from '@xsite-ui/common.style/css-reset';
@@ -20,7 +22,7 @@ const pageCss = css`
   }
 `;
 
-export const Head = () => {
+export const ArticleHead = () => {
   return (
     <>
       <Global styles={pageCss} />

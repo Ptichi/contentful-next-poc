@@ -3,15 +3,15 @@ import Link from 'next/link';
 import { UnifiedFooter } from '@xsite-ui/common.footer/unified-footer';
 import { Top10ThemeProvider } from '@xsite-ui/top10.theme';
 
-import MoreStories from '../../more-stories';
-import Avatar from '../../avatar';
-import Date from '../../date';
-import CoverImage from '../../cover-image';
+import MoreStories from '../../../more-stories';
+import Avatar from '../../../avatar';
+import Date from '../../../date';
+import CoverImage from '../../../cover-image';
 
 import { Markdown } from '@/lib/markdown';
-import footerProps from './footer-props.json';
+import footerProps from '../../../data/footer-props.json';
 
-export default function Body({ morePosts, post }) {
+function Body({ morePosts, post }) {
   return (
     <Top10ThemeProvider>
       <div className="container mx-auto px-5">
@@ -54,3 +54,7 @@ export default function Body({ morePosts, post }) {
     </Top10ThemeProvider>
   );
 }
+
+Body.displayName = 'Body';
+
+export default Body;
