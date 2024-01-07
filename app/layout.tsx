@@ -1,25 +1,38 @@
-// import './globals.css';
-// import { Inter } from 'next/font/google';
-import { EXAMPLE_PATH, CMS_NAME } from '@/lib/constants';
+'use client';
 
-export const metadata = {
-  title: `Next.js and ${CMS_NAME} Example`,
-  description: `This is a blog built with Next.js and ${CMS_NAME}.`,
-};
+import './globals.css';
 
-// const inter = Inter({
-//   variable: '--font-inter',
-//   subsets: ['latin'],
-//   display: 'swap',
-// });
+import { UnifiedFooter } from '@xsite-ui/common.footer/unified-footer';
+import SetoffBox from '@xsite-ui/top10.setoff-box';
+import { Top10ThemeProvider } from '@xsite-ui/top10.theme';
+
+import { Head } from './head';
+import { NavBar } from './nav-bar';
+
+import footerProps from './data/footer-props.json';
+import setOffBoxProps from './data/set-off-box-props.json';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <Head />
       <body>
-        <section className="min-h-screen">
-          <main>{children}</main>
-        </section>
+        <Top10ThemeProvider>
+          <SetoffBox {...setOffBoxProps} />
+          <NavBar />
+          <main
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              margin: '0 auto',
+              maxWidth: '1200px',
+              padding: '0 16px',
+            }}
+          >
+            {children}
+          </main>
+          <UnifiedFooter unifiedFooterContent={footerProps} />
+        </Top10ThemeProvider>
       </body>
     </html>
   );

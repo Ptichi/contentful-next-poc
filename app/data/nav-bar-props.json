@@ -1,0 +1,34 @@
+{
+  "navData": {
+    "navItems": {
+      "primary": [
+        {
+          "label": "Top 10",
+          "href": "/home-security/chart-super",
+          "active": false
+        }
+      ],
+      "secondary": [
+        {
+          "label": "Reviews",
+          "href": "/home-security/reviews",
+          "active": false,
+          "items": []
+        },
+        {
+          "label": "Top Reads",
+          "href": "/home-security/top-reads",
+          "active": false,
+          "items": []
+        }
+      ]
+    }
+  },
+  "isBusinessCategoryPage": false,
+  "siteLogoLink": "/home-security/chart-super",
+  "isTop10DarkThemeFtActive": false,
+  "isTop10MidnightThemeFtActive": false,
+  "secondLogoPath": "",
+  "siteLogoAeUrl": "",
+  "srcLogo": "https://images.top10.com/q_auto/v1/production/sites/uploads/photo/logo.20191212140001.svg"
+}
