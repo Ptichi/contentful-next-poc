@@ -1,7 +1,7 @@
 const POST_GRAPHQL_FIELDS = `
   slug
   title
-  coverImage {
+  coverPhoto {
     url
   }
   date
