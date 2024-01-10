@@ -6,7 +6,19 @@ import { Markdown } from '@/lib/markdown';
 
 function Body({ morePosts, post }: { morePosts: any[]; post: any }) {
   return (
-    <div className="container mx-auto px-5">
+    <div style={{ display: 'flex' }}>
+      <aside
+        style={{
+          paddingTop: '84px',
+          margin: '7px 65px 0 0',
+          width: '135px',
+        }}
+      >
+        <div
+          style={{ content: ' ', height: '45px', width: '115px', backgroundColor: '#f5f5f5', marginBottom: '10px' }}
+        />
+        <div style={{ content: ' ', height: '390px', width: '115px', backgroundColor: '#f5f5f5' }} />
+      </aside>
       <article style={{ display: 'flex', flexDirection: 'column', maxWidth: '635px' }}>
         <div style={{ height: '84px' }} />
         <h1 className="page-title">{post.title}</h1>
