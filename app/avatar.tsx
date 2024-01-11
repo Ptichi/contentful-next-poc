@@ -1,24 +1,19 @@
-import ContentfulImage from '@/lib/contentful-image'
+import ContentfulImage from '@/lib/contentful-image';
 
-export default function Avatar({
-  name,
-  picture,
-}: {
-  name: string
-  picture: any
-}) {
+export default function Avatar({ name, picture }: { name: string; picture: any }) {
   return (
-    <div className="flex items-center">
-      <div className="mr-4 w-12 h-12">
+    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+      <div>
         <ContentfulImage
           alt={name}
           className="object-cover h-full rounded-full"
           height={48}
           width={48}
           src={picture.url}
+          style={{ borderRadius: '50%' }}
         />
       </div>
-      <div className="text-xl font-bold">{name}</div>
+      <div style={{ color: '#797979' }}>{name}</div>
     </div>
-  )
+  );
 }
